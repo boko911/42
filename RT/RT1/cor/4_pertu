@@ -1,0 +1,28 @@
+--Scene declaration, must be the first thing
+scene ambiant 0.5 0.5 0.5 background 0.39 0.72 1 ambiant_base_impact 0.5 ambiant_coef_impact 0.15 max_reflexion 1 filter negative
+
+--Camera declaration
+camera position 0 3 -8 rotation 0 0 0 screen 800 800 fov 90 antialiasing 2
+
+--Lights declaration
+light position 0 0 -10 color 1 1 1 power 100
+
+--Material declarations
+material id one perturbation atrou color1 0.4 0 0 color2 0 0 0 shininess 100 specular 0.0
+material id two color1 1 1 1 color2 0 0 0 shininess 100 specular 0.0
+material id three perturbation hrndtc color1 0.4 0 0 color2 0 0 0 shininess 100 specular 0.0
+material id four perturbation linfa color1 0.4 0 0 color2 0 0 0 shininess 100 specular 0.0
+material id five perturbation rand* color1 0.4 0 0 color2 0 0 0 shininess 100 specular 0.0
+material id six perturbation colfa color1 0.4 0 0 color2 0 0 0 shininess 100 specular 0.0
+material id seven perturbation col color1 0.4 0 0 color2 0 0 0 shininess 100 specular 0.0
+material id eight perturbation dam color1 0.4 0 0 color2 0 0 0 shininess 100 specular 0.0
+
+--Primitives declarations
+sphere position 0 0 3.5 rotation 0 0 0 radius 3 material one
+cylinder position 0 -5 7 rotation 0 0 0 height 10 radius 1.2 material two
+cylinder position 5 -3 5 rotation 0 0 0 height 10 radius 1.2 material three
+cylinder position -5 -3 5 rotation 0 0 0 height 10 radius 1.2 material four
+cylinder position 7 -1 3 rotation 0 0 0 height 10 radius 1.2 material five
+cylinder position -7 -1 3 rotation 0 0 0 height 10 radius 1.2 material six
+cylinder position 9 1 1 rotation 0 0 0 height 10 radius 1.2 material seven
+cylinder position -9 1 1 rotation 0 0 0 height 10 radius 1.2 material eight

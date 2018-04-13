@@ -1,0 +1,70 @@
+--Scene declaration, must be the first thing
+scene ambiant 0.3 0.3 0.3 background 0.18 0.31 0.31 ambiant_base_impact 2 ambiant_coef_impact 0.15 max_reflexion 5
+--Camera declaration
+camera position 0 10 -50 rotation 0 0 0 screen 1280 720 fov 90 antialiasing 1
+--Lights declaration
+light position 8 3.5 -5 color 1 1 1 power 100
+light position -8 3.5 -5 color 1 1 1 power 100
+
+--Material declarations
+material id floor color1 .5 .5 .5 ambiant 1 diffuse 0.9 specular 1 shininess 100 reflexion 0.2
+material id pillar color1 1 1 1 ambiant 1 diffuse .9 specular 1 shininess 100 reflexion 0
+material id central_pillar color1 0 0 0 ambiant 1 diffuse .9 specular 1 shininess 100 reflexion 0
+--Primitives declarations
+plane position 0 -1 0 rotation 0 0 0 material floor
+cylinder position 0 -1 0 height 25 rotation 0 0 0 radius 5 material central_pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+
+
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+
+
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar
+cylinder position ~ -1 ~ height 100 rotation 0 0 0 radius 2 material pillar

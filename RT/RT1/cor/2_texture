@@ -1,0 +1,40 @@
+--Scene declaration, must be the first thing
+scene ambiant 0.5 0.5 0.5 background 0.09 0.45 0.80 ambiant_base_impact 0.5 ambiant_coef_impact 0.15 max_reflexion 1
+
+--Camera declaration
+camera position 0 0 -8 rotation 0 0 0 screen 800 800 fov 90 antialiasing 1
+
+--Lights declaration
+light position 0 0 -10 color 1 1 1 power 100
+
+image id dam name manu.bmp
+image id steel name steel.bmp
+
+texture id wall1 image dam elarge 0.5 0.5 begin 270 50
+texture id spikes image steel elarge 0.2 0.2 begin 0 0
+
+--Material declarations
+material id leftsphere texture wall1 shininess 100 specular 0.0
+material id ground color1 .09 .13 .32 ambiant 1 diffuse 0.9 specular 1 shininess 100
+material id mirror color1 1 1 1 ambiant 1 diffuse 0.9 specular 1 shininess 100 reflexion 0.1 refraction 0.1
+material id spike texture spikes shininess 100 specular 0.0
+
+--Primitives declarations
+sphere position 0 0 3.5 rotation 0 0 0 radius 3 material leftsphere
+
+cone position 5 0.5 -2 rotation 0 0 0 angle 40 material spike start_height 0 end_height -20
+cone position -5 0.5 -2 rotation 0 0 0 angle 40 material spike start_height 0 end_height -20
+cone position 7 1 8 rotation 0 0 0 angle 40 material spike start_height 0 end_height -20
+cone position -7 1 8 rotation 0 0 0 angle 40 material spike start_height 0 end_height -20
+cone position 3 0.2 5 rotation 0 0 0 angle 40 material spike start_height 0 end_height -20
+cone position -3 0.2 5 rotation 0 0 0 angle 40 material spike start_height 0 end_height -20
+cone position 10 0 3 rotation 0 0 0 angle 40 material spike start_height 0 end_height -20
+cone position -10 0 3 rotation 0 0 0 angle 40 material spike start_height 0 end_height -20
+cone position 13 0 15 rotation 0 0 0 angle 40 material spike start_height 0 end_height -20
+cone position -13 0 15 rotation 0 0 0 angle 40 material spike start_height 0 end_height -20
+
+cylinder position -6.7 -4 2 rotation 0 0 0 height 10 radius 1.2 material spike
+cylinder position 6.7 -4 2 rotation 0 0 0 height 10 radius 1.2 material spike
+
+plane position 0 1.5 0 rotation 0 0 0 material ground
+plane position 0 -2 5 rotation 0 0 0 material mirror
